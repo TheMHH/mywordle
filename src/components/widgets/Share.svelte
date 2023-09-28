@@ -4,31 +4,56 @@
 	import { mode } from "../../stores";
 	import { failed, modeData, GameState } from "../../utils";
 	import { getContext } from "svelte";
+    import Stat from "./stats/Stat.svelte";
 
 	export let state: GameState;
 	const toaster = getContext<Toaster>("toaster");
 
 	function copyStats() {
-		navigator.clipboard.writeText(
-			`${modeData.modes[$mode].name} Wordle+ #${state.wordNumber} ${
-				failed(state) ? "X" : state.guesses
-			}/${state.board.words.length}\n\n    ${state.board.state
-				.slice(0, state.guesses)
-				.map((r) => r.join(""))
-				.join("\n    ")}\nmikhad.github.io/wordle`
-		);
-		toaster.pop("Copied");
+		if (failed(state))
+		{
+			toaster.pop("you must win the game first");
+		}	
+		else
+		{
+			toaster.pop("Copied");
+			if (modeData.modes[$mode].name === "G1")
+			{
+				navigator.clipboard.writeText("link1");
+
+			}
+			else if (modeData.modes[$mode].name === "G2")
+			{
+				navigator.clipboard.writeText("link2");
+			}
+			else if (modeData.modes[$mode].name === "G3")
+			{
+				navigator.clipboard.writeText("link3");
+			}
+			else if (modeData.modes[$mode].name === "G4")
+			{
+				navigator.clipboard.writeText("link4");
+			}
+			else if (modeData.modes[$mode].name === "G5")
+			{
+				navigator.clipboard.writeText("link5");
+			}
+			else if (modeData.modes[$mode].name === "G6")
+			{
+				navigator.clipboard.writeText("link6");
+			}
+		}
 	}
 </script>
 
 <div on:click={copyStats} on:keydown={copyStats}>
-	share
 	<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
 		<path
 			fill="white"
-			d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92c0-1.61-1.31-2.92-2.92-2.92zM18 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM6 13c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm12 7.02c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"
+			d="M4.167 4.167c-1.381 1.381-1.381 3.619 0 5L6.5 11.5a1.18 1.18 0 0 1 0 1.667 1.18 1.18 0 0 1-1.667 0L2.5 10.833C.199 8.532.199 4.801 2.5 2.5s6.032-2.301 8.333 0l3.333 3.333c2.301 2.301 2.301 6.032 0 8.333a1.18 1.18 0 0 1-1.667 0 1.18 1.18 0 0 1 0-1.667c1.381-1.381 1.381-3.619 0-5L9.167 4.167c-1.381-1.381-3.619-1.381-5 0zm5.667 14c-2.301-2.301-2.301-6.032 0-8.333a1.18 1.18 0 0 1 1.667 0 1.18 1.18 0 0 1 0 1.667c-1.381 1.381-1.381 3.619 0 5l3.333 3.333c1.381 1.381 3.619 1.381 5 0s1.381-3.619 0-5L17.5 12.5a1.18 1.18 0 0 1 0-1.667 1.18 1.18 0 0 1 1.667 0l2.333 2.333c2.301 2.301 2.301 6.032 0 8.333s-6.032 2.301-8.333 0l-3.333-3.333z"
 		/>
 	</svg>
+	<h6>link to next step</h6>
 </div>
 
 <style lang="scss">
