@@ -10,7 +10,9 @@
 
 <div class="toast">
 	{#each toast as slice}
-		<div class="slice" out:fade={{ duration: 200 }}>{slice}</div>
+		<div class="slice" out:fade={{ duration: 500}}>
+			{slice}
+		</div>
 	{/each}
 </div>
 

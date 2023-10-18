@@ -55,7 +55,7 @@
 			/>
 		</GameIcon>
 	</div>
-	{#if tutorial}
+	<!-- {#if tutorial}
 		<div
 			transition:scale
 			class="tutorial"
@@ -65,7 +65,7 @@
 			Swipe board or tap WORDLE+ to change game mode
 			<span class="ok">OK</span>
 		</div>
-	{/if}
+	{/if} -->
 </header>
 
 <style lang="scss">
