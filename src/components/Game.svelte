@@ -206,8 +206,8 @@
 	{#if modeData.modes[$mode].historical}
 		<h2 class="historical">Statistics not available for historical games</h2>
 	{:else}
-		<Statistics data={stats} />
-		<Distribution distribution={stats.guesses} {game} />
+		<!-- <Statistics data={stats} /> -->
+		<!-- <Distribution distribution={stats.guesses} {game} /> -->
 	{/if}
 	<Separator visible={!game.active}>
 		<Timer
