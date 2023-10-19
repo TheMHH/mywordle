@@ -20,32 +20,32 @@
 			if (modeData.modes[$mode].name === "G1")
 			{
 				// navigator.clipboard.writeText("link1");
-				toaster.pop("G1 text", 5);
+				toaster.pop("🔑 361 ♣️ 112", 5);
 			}
 			else if (modeData.modes[$mode].name === "G2")
 			{
 				// navigator.clipboard.writeText("link2");
-				toaster.pop("G2 text", 5);
+				toaster.pop("🔑 361 ♣️ 112", 5);
 			}
 			else if (modeData.modes[$mode].name === "G3")
 			{
 				// navigator.clipboard.writeText("link3");
-				toaster.pop("G3 text", 5);
+				toaster.pop("🔑 361 ♣️ 112", 5);
 			}
 			else if (modeData.modes[$mode].name === "G4")
 			{
 				// navigator.clipboard.writeText("link4");
-				toaster.pop("G4 text", 5);
+				toaster.pop("🔑 361 ♣️ 112", 5);
 			}
 			else if (modeData.modes[$mode].name === "G5")
 			{
 				// navigator.clipboard.writeText("link5");
-				toaster.pop("G5 text", 5);
+				toaster.pop("🔑 361 ♣️ 112", 5);
 			}
 			else if (modeData.modes[$mode].name === "G6")
 			{
 				// navigator.clipboard.writeText("link6");
-				toaster.pop("G6 text", 5);
+				toaster.pop("🔑 361 ♣️ 112", 5);
 			}
 		}
 	}
