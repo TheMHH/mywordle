@@ -2,11 +2,11 @@
 	import { createEventDispatcher, getContext, onMount } from "svelte";
 
 	import { mode, settings } from "../../stores";
-	import { modeData, GameState } from "../../utils";
+	// import { modeData, GameState } from "../../utils";
 	import type { Toaster } from "../widgets";
 	import Setting from "./Setting.svelte";
 
-	export let state: GameState;
+	// export let state: GameState;
 
 	const toaster = getContext<Toaster>("toaster");
 	const dispatch = createEventDispatcher();
@@ -32,13 +32,7 @@
 	<div class="settings-top">
 		<h3>settings</h3>
 		<!-- svelte-ignore a11y-click-events-have-key-events -->
-		<div
-			on:click={() => {
-				if (!state.validHard) {
-					toaster.pop("Game has already violated hard mode");
-				}
-			}}
-		>
+		<div>
 			<!-- <Setting type="switch" bind:value={$settings.hard[$mode]} disabled={!state.validHard}>
 				<svelte:fragment slot="title">Hard Mode</svelte:fragment>
 				<svelte:fragment slot="desc">
