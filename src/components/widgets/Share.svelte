@@ -20,32 +20,42 @@
 			if (modeData.modes[$mode].name === "G1")
 			{
 				// navigator.clipboard.writeText("link1");
-				toaster.pop("🔑 361 ♣️ 112", 5);
+				toaster.pop("🔑 361", 5);
 			}
 			else if (modeData.modes[$mode].name === "G2")
 			{
 				// navigator.clipboard.writeText("link2");
-				toaster.pop("🔑 361 ♣️ 112", 5);
+				toaster.pop("🔑 361", 5);
 			}
 			else if (modeData.modes[$mode].name === "G3")
 			{
 				// navigator.clipboard.writeText("link3");
-				toaster.pop("🔑 361 ♣️ 112", 5);
+				toaster.pop("🔑 361", 5);
 			}
 			else if (modeData.modes[$mode].name === "G4")
 			{
 				// navigator.clipboard.writeText("link4");
-				toaster.pop("🔑 361 ♣️ 112", 5);
+				toaster.pop("🔑 361", 5);
 			}
 			else if (modeData.modes[$mode].name === "G5")
 			{
 				// navigator.clipboard.writeText("link5");
-				toaster.pop("🔑 361 ♣️ 112", 5);
+				toaster.pop("🔑 361", 5);
 			}
 			else if (modeData.modes[$mode].name === "G6")
 			{
 				// navigator.clipboard.writeText("link6");
-				toaster.pop("🔑 361 ♣️ 112", 5);
+				toaster.pop("🔑 361", 5);
+			}
+			else if (modeData.modes[$mode].name === "G7")
+			{
+				// navigator.clipboard.writeText("link7");
+				toaster.pop("🔑 361", 5);
+			}			
+			else if (modeData.modes[$mode].name === "G8")
+			{
+				// navigator.clipboard.writeText("link8");
+				toaster.pop("🔑 361", 5);
 			}
 		}
 	}

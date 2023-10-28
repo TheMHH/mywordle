@@ -160,6 +160,10 @@ export function newSeed(mode: GameMode, time?: number) {
 			return now - (now % ms.SECOND);
 		case GameMode.G6:
 			return now - (now % ms.SECOND);
+		case GameMode.G7:
+			return now - (now % ms.SECOND);
+		case GameMode.G8:
+			return now - (now % ms.SECOND);
 	}
 }
 
@@ -179,7 +183,7 @@ export const modeData: ModeData = {
 			name: "G2",
 			unit: ms.SECOND,
 			start: 1642370400000,	// 17/01/2022 UTC+2
-			seed: newSeed(GameMode.G1),
+			seed: newSeed(GameMode.G2),
 			historical: false,
 			streak: true,
 			useTimeZone: true,
@@ -188,7 +192,7 @@ export const modeData: ModeData = {
 			name: "G3",
 			unit: ms.SECOND,
 			start: 1642370400000,	// 17/01/2022 UTC+2
-			seed: newSeed(GameMode.G1),
+			seed: newSeed(GameMode.G3),
 			historical: false,
 			streak: true,
 			useTimeZone: true,
@@ -197,7 +201,7 @@ export const modeData: ModeData = {
 			name: "G4",
 			unit: ms.SECOND,
 			start: 1642370400000,	// 17/01/2022 UTC+2
-			seed: newSeed(GameMode.G1),
+			seed: newSeed(GameMode.G4),
 			historical: false,
 			streak: true,
 			useTimeZone: true,
@@ -206,7 +210,7 @@ export const modeData: ModeData = {
 			name: "G5",
 			unit: ms.SECOND,
 			start: 1642370400000,	// 17/01/2022 UTC+2
-			seed: newSeed(GameMode.G1),
+			seed: newSeed(GameMode.G5),
 			historical: false,
 			streak: true,
 			useTimeZone: true,
@@ -215,7 +219,25 @@ export const modeData: ModeData = {
 			name: "G6",
 			unit: ms.SECOND,
 			start: 1642370400000,	// 17/01/2022 UTC+2
-			seed: newSeed(GameMode.G1),
+			seed: newSeed(GameMode.G6),
+			historical: false,
+			streak: true,
+			useTimeZone: true,
+		},
+		{
+			name: "G7",
+			unit: ms.SECOND,
+			start: 1642370400000,	// 17/01/2022 UTC+2
+			seed: newSeed(GameMode.G7),
+			historical: false,
+			streak: true,
+			useTimeZone: true,
+		},
+		{
+			name: "G8",
+			unit: ms.SECOND,
+			start: 1642370400000,	// 17/01/2022 UTC+2
+			seed: newSeed(GameMode.G8),
 			historical: false,
 			streak: true,
 			useTimeZone: true,

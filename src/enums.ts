@@ -5,7 +5,8 @@ export enum GameMode {
 	"G4",
 	"G5",
 	"G6",
-
+	"G7",
+	"G8",
 	// "minutely",
 };
 
